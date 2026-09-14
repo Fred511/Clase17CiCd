@@ -2,10 +2,11 @@ name: CI
 
 on:
   push:
-    pull_request:
+  pull_request:
 
 jobs:
   construir-y-probar:
+    runs-on: ubuntu-latest
     steps:
       - name: Traer el codigo
         uses: actions/checkout@v4
